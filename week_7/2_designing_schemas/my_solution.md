@@ -23,6 +23,11 @@
 
 ## Release 4: Design your own Schema
 Description of what you're modeling: 
+
+My one to one schema represents the members of a family and the cars that they own. Each car is only associated with one particular family members, but a family member may be associated with multiple cars.
+
+My many to many schema represents customers, their various orders, and products for sale. Each order has a customer and a product associated with it.
+
 <img src='../imgs/my_one_to_one.png'>
 <img src='../imgs/my_many_to_many.png'>
 
