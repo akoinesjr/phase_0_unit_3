@@ -35,3 +35,5 @@ My many to many schema represents customers, their various orders, and products 
 <!-- display your many-to-many image inline here -->
 
 ## Release 5: Reflection
+
+My experience working through this exercise and with SQL so far has been quite interesting.I used to work quite regularly with data in large Excel spreadsheets, and it is interesting to see the parallels between various SQL commands and Excel formulas that I've used in the past.
