@@ -22,10 +22,10 @@ The relationship between `users` and `tweets` is:
 One to many because each user can have many tweets, but each tweet can only be composed by one user.
 
 ## Release 3: Schema Design
-<!-- Include your image (inline) of your schema -->
+<img src='../imgs/users_tweets.png'>
 
-## Release 4: SQL Statements
-<!-- Include your SQL Statements. How can you make markdown files show blocks of code? -->
-
+## Release 4: SQL Statement
+<code>dhsjak</code>
 ## Release 5: Reflection
 <!-- Be sure to add your reflection here!!! -->
+I've found a one to many relationship to be one of the easier types of relationships to understand. 
