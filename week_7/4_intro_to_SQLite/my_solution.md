@@ -84,3 +84,4 @@ id          first_name  last_name   email                  created_at           
 
 ## Release 5: Reflect
 
+The most challenging part of this exercise was simply making sure we had the syntax exactly right for the commands that we were executing. We were able to generally progress through it quite well despite a few minor sticking points.
