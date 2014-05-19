@@ -1,14 +1,25 @@
 # U3.W7: Modeling a Real-World Database (SOLO CHALLENGE)
 
 ## Release 0: Users Fields
-<!-- Identify the fields Twitter collects data for -->
+username
+photo
+header
+name
+location
+website
+bio
 
 ## Release 1: Tweet Fields
-<!-- Identify the fields Twitter uses to represent/display a tweet. What are you required or allowed to enter? -->
+name
+username
+timestamp
+tweet content
+retweet count
+favorite count
 
 ## Release 2: Explain the relationship
 The relationship between `users` and `tweets` is: 
-<!-- because... -->
+One to many because each user can have many tweets, but each tweet can only be composed by one user.
 
 ## Release 3: Schema Design
 <!-- Include your image (inline) of your schema -->
