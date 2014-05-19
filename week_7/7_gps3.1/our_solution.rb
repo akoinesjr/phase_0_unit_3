@@ -80,4 +80,11 @@ p grocery
 
 grocery.show
 p grocery
+
+#REFLECTION
+=begin
+We were able to build this class fairly easily, but the solution we implemented was fairly simple. It might be good to add aditional functionality, such as the ability to categorize the items on the list.
+ 
+
+=end
  
