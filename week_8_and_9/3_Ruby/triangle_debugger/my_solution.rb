@@ -27,7 +27,6 @@ def valid_triangle?(a, b, c, sum)
   end
 end
 
-
 # 2. Answer the question for each bug
 
 # --- Bug 1 ---
