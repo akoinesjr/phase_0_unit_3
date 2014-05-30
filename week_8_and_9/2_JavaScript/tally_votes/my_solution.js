@@ -64,12 +64,51 @@ var officers = {
 }
 
 // Pseudocode
+/*
+For each voter in votes,
+Check if the value for each pair exists in voteCount
+  If yes, increment the voteCount by one
+  If no, add a key for that person to voteCount and set the value to 1
 
+For each value in voteCount, find the key corresponded with the value with the
+highest number and set the value of the corresponding key in officers to the appropriate
+person's name.
+
+*/
 
 // __________________________________________
 // Initial Solution
 
+for (var key in votes){
+  var students=votes[key];
 
+  for (var property in students){
+    var vote = students[property];
+
+    if(voteCount[property].hasOwnProperty(vote)){
+      voteCount[property][vote]+=1;
+    }
+    else{
+      voteCount[property][vote]=1;
+    }
+
+  }
+
+}
+
+
+for (var position in voteCount) {
+    var candidates = voteCount[position];
+    var max_votes = 0;
+    for (var candidate in candidates) {
+        var votes = candidates[candidate];
+        if (votes > max_votes) {
+            max_votes = votes;
+            officers[position] = candidate;
+        }
+    }
+    max_votes = 0;
+}
 
 
 
