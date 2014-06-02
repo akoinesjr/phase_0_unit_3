@@ -43,53 +43,25 @@ Return answer
 def in_words(num)
 	raise ArgumentError, 'Number must be from 1 to 100' unless 0<num && num<=100
 
-	answer=''
+	translation = {0=>"zero",1=>"one",2=>"two",3=>"three",4=>"four",5=>"five",6=>"six",7=>"seven",8=>"eight",9=>"nine",
+  10=>"ten",11=>"eleven",12=>"twelve",13=>"thirteen",14=>"fourteen",15=>"fifteen",16=>"sixteen",
+  17=>"seventeen", 18=>"eighteen",19=>"nineteen",
+  20=>"twenty",30=>"thirty",40=>"forty",50=>"fifty",60=>"sixty",70=>"seventy",80=>"eighty",90=>"ninety", 100=>"one hundred"}
 
-	if num==100
-		puts "One hundred"
-		
+	if num.between?(0,20) || num == 100
+		return translation[num]
+	
 	else
-		num = num.to_s.split("")
-		
-		if num.length==1
-			case num[0]
-			
-			when "1"
-				puts "One"
-			when "2"
-				puts "Two"
-			when "3"
-				puts "Three"
-			when "4"
-				puts "Four"
-			when "5"
-				puts "Five"
-			when "6"
-				puts "Six"
-			when "7"
-				puts "Seven"
-			when "8"
-				puts "Eight"
-			when "9"
-				puts "Nine"
-			end		
-
-		elsif num[0]==1
-			
-
-
+		number_string=num.to_s[0]+"0"
+		if num.to_s[1] != "0"
+			ones_place=num.to_s[1]
+			return translation[number_string.to_i] + " " + translation[ones_place.to_i]
+		else
+			return translation[number_string.to_i]
 		end
-
-	end
-
+end
 end
 
-
-
-
-in_words(100)
-in_words(1)
-in_words(6)
 
 
 # 4. Refactored Solution
@@ -101,7 +73,10 @@ in_words(6)
 
 # 1. DRIVER TESTS/ASSERT STATEMENTS GO BELOW THIS LINE
 
-
+puts in_words(19) == "nineteen"
+puts in_words(33) == "thirty three"
+puts in_words(1) == "one"
+puts in_words(100) == "one hundred"
 
 
 
